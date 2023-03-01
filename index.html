@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>News Slideshow</title>
+    <style>
+      body {
+        background-color: #191a1b;
+      }
+      
+      #slideshow {
+        width: 371px;
+        height: 311px;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      #slideshow img {
+        width: 300px;
+        height: 230px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        animation: fade 5s infinite;
+      }
+      
+      #slideshow img:first-child {
+        opacity: 1;
+      }
+      
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        33.33% {
+          opacity: 1;
+        }
+        66.66% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slideshow">
+      <img src="https://i.imgur.com/A8N6u2t.png" alt="News 1">
+      <img src="https://i.imgur.com/A8N6u2t.png" alt="News 2">
+      <img src="https://i.imgur.com/A8N6u2t.png" alt="News 3">
+    </div>
+  </body>
+</html>
